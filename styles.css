@@ -54,9 +54,35 @@ body {
     margin: 0;
 }
 
-.encore-logo {
+.combined-logo {
+    position: relative;
+    display: inline-block;
+}
+
+.combined-logo-img {
     height: 35px;
     width: auto;
+}
+
+.emory-link {
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.encore-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 3;
+}
+
+.encore-overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-menu {
@@ -767,8 +793,8 @@ section {
 }
 
 .sponsor-logo {
-    max-height: 80px;
-    max-width: 180px;
+    max-height: 50px;
+    max-width: 120px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -900,6 +926,12 @@ section {
 .footer-logo {
     height: 30px;
     width: auto;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.footer-combined-logo .combined-logo-img {
+    height: 30px;
     margin-bottom: 1rem;
     opacity: 0.8;
 }
@@ -1046,16 +1078,14 @@ section {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.sponsor-logo {
-    max-height: 80px;
-    max-width: 200px;
-    width: auto;
-    height: auto;
-    margin-bottom: 1rem;
-    object-fit: contain;
-}
-
-.sponsor-item h4 {
+    .sponsor-logo {
+        max-height: 40px;
+        max-width: 100px;
+        width: auto;
+        height: auto;
+        margin-bottom: 1rem;
+        object-fit: contain;
+    }.sponsor-item h4 {
     color: #042467;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
