@@ -182,7 +182,7 @@ function copyToClipboard(text) {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #7a003c;
+            background: #042467;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -239,7 +239,7 @@ function showLoading() {
                 width: 50px;
                 height: 50px;
                 border: 3px solid #f3f3f3;
-                border-top: 3px solid #7a003c;
+                border-top: 3px solid #042467;
                 border-radius: 50%;
                 animation: spin 1s linear infinite;
             "></div>
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
         position: absolute;
         top: -40px;
         left: 6px;
-        background: #7a003c;
+        background: #042467;
         color: white;
         padding: 8px;
         text-decoration: none;

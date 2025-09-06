@@ -48,7 +48,7 @@ body {
 }
 
 .nav-logo h2 {
-    color: #7a003c;
+    color: #042467;
     font-weight: 700;
     font-size: 1.8rem;
     margin: 0;
@@ -73,7 +73,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #7a003c;
+    color: #042467;
 }
 
 .hamburger {
@@ -92,7 +92,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #7a003c 0%, #b8860b 100%);
+    background: linear-gradient(135deg, #042467 0%, #eaab30 100%);
     color: white;
     padding: 120px 0 80px;
     text-align: center;
@@ -180,7 +180,7 @@ body {
 
 .btn-primary {
     background-color: #fff;
-    color: #7a003c;
+    color: #042467;
     border-color: #fff;
 }
 
@@ -198,7 +198,7 @@ body {
 
 .btn-secondary:hover {
     background-color: #fff;
-    color: #7a003c;
+    color: #042467;
 }
 
 .btn-large {
@@ -218,7 +218,7 @@ section {
 
 .section-header h2 {
     font-size: 2.5rem;
-    color: #7a003c;
+    color: #042467;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -266,7 +266,7 @@ section {
 
 .feature i {
     font-size: 3rem;
-    color: #7a003c;
+    color: #042467;
     margin-bottom: 1rem;
 }
 
@@ -293,7 +293,7 @@ section {
     padding: 2rem;
     background: #f8f9fa;
     border-radius: 10px;
-    border-left: 5px solid #7a003c;
+    border-left: 5px solid #042467;
     transition: all 0.3s ease;
 }
 
@@ -305,7 +305,7 @@ section {
 .date-icon {
     margin-right: 1.5rem;
     font-size: 2rem;
-    color: #7a003c;
+    color: #042467;
 }
 
 .date-content h3 {
@@ -316,7 +316,7 @@ section {
 
 .date {
     font-weight: 600;
-    color: #7a003c;
+    color: #042467;
     font-size: 1.1rem;
 }
 
@@ -329,7 +329,7 @@ section {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #7a003c;
+    color: #042467;
 }
 
 .registration-info > p {
@@ -363,7 +363,7 @@ section {
 }
 
 .pricing-card.featured {
-    border-color: #7a003c;
+    border-color: #042467;
     transform: scale(1.05);
 }
 
@@ -376,7 +376,7 @@ section {
 .price {
     font-size: 3rem;
     font-weight: 700;
-    color: #7a003c;
+    color: #042467;
     margin-bottom: 0.5rem;
 }
 
@@ -398,7 +398,7 @@ section {
 
 .pricing-card li:before {
     content: "✓";
-    color: #7a003c;
+    color: #042467;
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -428,9 +428,9 @@ section {
 
 .tab-button {
     padding: 10px 20px;
-    border: 2px solid #7a003c;
+    border: 2px solid #042467;
     background: transparent;
-    color: #7a003c;
+    color: #042467;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
@@ -439,7 +439,7 @@ section {
 
 .tab-button.active,
 .tab-button:hover {
-    background: #7a003c;
+    background: #042467;
     color: white;
 }
 
@@ -467,7 +467,7 @@ section {
 .time {
     min-width: 200px;
     font-weight: 600;
-    color: #7a003c;
+    color: #042467;
 }
 
 .event {
@@ -522,7 +522,7 @@ section {
 }
 
 .affiliation {
-    color: #7a003c;
+    color: #042467;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -549,7 +549,7 @@ section {
 .about-atlanta h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #7a003c;
+    color: #042467;
 }
 
 .venue-info p,
@@ -565,11 +565,11 @@ section {
     padding: 1.5rem;
     border-radius: 8px;
     margin: 1.5rem 0;
-    border-left: 4px solid #7a003c;
+    border-left: 4px solid #042467;
 }
 
 .venue-address h4 {
-    color: #7a003c;
+    color: #042467;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
@@ -606,7 +606,7 @@ section {
 }
 
 .atlanta-features li strong {
-    color: #7a003c;
+    color: #042467;
     font-weight: 600;
 }
 
@@ -632,7 +632,7 @@ section {
 }
 
 .feature-item i {
-    color: #7a003c;
+    color: #042467;
     font-size: 1.2rem;
 }
 
@@ -648,7 +648,7 @@ section {
 .committee-section h3 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: #7a003c;
+    color: #042467;
     text-align: center;
 }
 
@@ -672,7 +672,7 @@ section {
 }
 
 .committee-member.featured {
-    border: 2px solid #7a003c;
+    border: 2px solid #042467;
     position: relative;
 }
 
@@ -682,7 +682,7 @@ section {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background: #7a003c;
+    background: #042467;
     color: white;
     padding: 5px 15px;
     border-radius: 15px;
@@ -696,7 +696,7 @@ section {
     margin: 0 auto 1rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #7a003c;
+    border: 4px solid #042467;
 }
 
 .member-photo img {
@@ -712,7 +712,7 @@ section {
 }
 
 .member-info .title {
-    color: #7a003c;
+    color: #042467;
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 1rem;
@@ -745,7 +745,7 @@ section {
     justify-content: center;
     width: 35px;
     height: 35px;
-    background: #7a003c;
+    background: #042467;
     color: white;
     border-radius: 50%;
     text-decoration: none;
@@ -753,7 +753,7 @@ section {
 }
 
 .contact-info a:hover {
-    background: #b8860b;
+    background: #eaab30;
     transform: translateY(-2px);
 }
 
@@ -786,7 +786,7 @@ section {
 .social-links h3 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: #7a003c;
+    color: #042467;
 }
 
 .contact-item {
@@ -798,13 +798,13 @@ section {
 }
 
 .contact-item i {
-    color: #7a003c;
+    color: #042467;
     font-size: 1.2rem;
     width: 20px;
 }
 
 .contact-item a {
-    color: #7a003c;
+    color: #042467;
     text-decoration: none;
 }
 
@@ -823,7 +823,7 @@ section {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: #7a003c;
+    background: #042467;
     color: white;
     border-radius: 50%;
     text-decoration: none;
@@ -831,7 +831,7 @@ section {
 }
 
 .social-icons a:hover {
-    background: #b8860b;
+    background: #eaab30;
     transform: translateY(-3px);
 }
 
@@ -850,7 +850,7 @@ section {
 }
 
 .footer-section h3 {
-    color: #7a003c;
+    color: #042467;
     margin-bottom: 1rem;
 }
 
@@ -869,7 +869,7 @@ section {
 }
 
 .footer-section ul li a:hover {
-    color: #7a003c;
+    color: #042467;
 }
 
 .footer-bottom {
@@ -1011,7 +1011,7 @@ section {
 }
 
 .sponsor-item h4 {
-    color: #7a003c;
+    color: #042467;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
