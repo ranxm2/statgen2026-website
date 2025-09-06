@@ -8,7 +8,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #042467;
     background-color: #fff;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .encore-logo {
-    height: 40px;
+    height: 35px;
     width: auto;
 }
 
@@ -273,7 +273,7 @@ section {
 .feature h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #042467;
 }
 
 /* Key Dates Section */
@@ -311,7 +311,7 @@ section {
 .date-content h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #042467;
 }
 
 .date {
@@ -370,7 +370,7 @@ section {
 .pricing-card h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #042467;
 }
 
 .price {
@@ -472,7 +472,7 @@ section {
 
 .event {
     flex: 1;
-    color: #333;
+    color: #042467;
 }
 
 /* Speakers Section */
@@ -518,7 +518,7 @@ section {
 .speaker-info h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #042467;
 }
 
 .affiliation {
@@ -708,7 +708,7 @@ section {
 .member-info h4 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #042467;
 }
 
 .member-info .title {
@@ -726,12 +726,10 @@ section {
 }
 
 .member-info .bio {
-    color: #555;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    text-align: left;
+    text-align: center;
 }
+
+/* Contact Section */
 
 .contact-info {
     display: flex;
@@ -761,7 +759,7 @@ section {
 .committee-member:not(.featured) h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #042467;
 }
 
 .committee-member:not(.featured) p {
@@ -852,6 +850,13 @@ section {
 .footer-section h3 {
     color: #042467;
     margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 30px;
+    width: auto;
+    margin-bottom: 1rem;
+    opacity: 0.8;
 }
 
 .footer-section ul {
@@ -963,11 +968,6 @@ section {
     
     .nav-logo h2 {
         font-size: 1.4rem;
-    }
-    
-    .sponsors-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
     }
     
     .venue-image img {
