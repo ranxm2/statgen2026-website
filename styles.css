@@ -341,6 +341,44 @@ section {
     margin-right: auto;
 }
 
+.registration-rates {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    text-align: left;
+}
+
+.registration-rates h4 {
+    color: #042467;
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.rate-list,
+.included-items {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.rate-list li,
+.included-items li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.rate-list li:last-child,
+.included-items li:last-child {
+    border-bottom: none;
+}
+
+.rate-list li strong {
+    color: #042467;
+    font-weight: 600;
+}
+
 .pricing-table {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -616,6 +654,125 @@ section {
     border-top: 2px solid #f0f0f0;
 }
 
+/* Hotel Styling */
+.hotel-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #042467;
+}
+
+.hotel-item.featured-hotel {
+    background: #fff;
+    border: 2px solid #042467;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hotel-item h4 {
+    color: #042467;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.hotel-item p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.hotel-item .btn {
+    margin-top: 1rem;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* Transportation and Parking */
+.transportation-parking,
+.dining-options,
+.local-attractions {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.transportation-parking h3,
+.dining-options h3,
+.local-attractions h3 {
+    color: #042467;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.transportation-parking h4,
+.dining-options h4,
+.local-attractions h4 {
+    color: #042467;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.transportation-parking h5,
+.dining-options h5,
+.local-attractions h5 {
+    color: #042467;
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.transport-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.transport-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #042467;
+}
+
+.parking-info {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid #eaab30;
+}
+
+.dining-location {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.attraction-category {
+    margin: 2rem 0;
+}
+
+.attraction-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.attraction-category li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
+}
+
+.attraction-category li:last-child {
+    border-bottom: none;
+}
+
+.attraction-category li strong {
+    color: #042467;
+    font-weight: 600;
+}
+
 .venue-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -711,6 +868,17 @@ section {
     color: #042467;
 }
 
+.member-info h4 a {
+    color: #042467;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.member-info h4 a:hover {
+    color: #eaab30;
+    text-decoration: underline;
+}
+
 .member-info .title {
     color: #042467;
     font-weight: 600;
@@ -721,8 +889,15 @@ section {
 .member-info .department {
     color: #666;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 1.4;
+}
+
+.member-info .university {
+    color: #042467;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
     .member-info .bio {
@@ -818,26 +993,24 @@ section {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.contact-info h3,
-.social-links h3 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #042467;
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1.5rem;
     font-size: 1.1rem;
+    justify-content: center;
 }
 
 .contact-item i {
@@ -855,97 +1028,128 @@ section {
     text-decoration: underline;
 }
 
-.social-icons {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: #042467;
-    color: white;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    background: #eaab30;
-    transform: translateY(-3px);
-}
-
 /* Footer */
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: #042467;
     padding: 3rem 0 1rem;
+    border-top: 1px solid #eee;
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
-.footer-section h3 {
-    color: #042467;
-    margin-bottom: 1rem;
+.footer-branding {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .footer-logo {
-    height: 30px;
-    width: auto;
-    margin-bottom: 1rem;
-    opacity: 0.8;
-}
-
-.footer-logos {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    flex-shrink: 0;
 }
 
 .footer-rsph-logo {
-    height: 30px;
+    height: 60px;
     width: auto;
-    opacity: 0.8;
 }
 
-.footer-encore-logo {
-    height: 30px;
-    width: auto;
-    opacity: 0.8;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
+.footer-address p {
+    margin: 0;
+    line-height: 1.4;
     color: #042467;
+    font-size: 1rem;
+}
+
+.footer-contact h4 {
+    color: #042467;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.footer-contact a {
+    color: #042467;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer-contact a:hover {
+    color: #eaab30;
+}
+
+.footer-communications h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-communications h4 a {
+    color: #042467;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer-communications h4 a:hover {
+    color: #eaab30;
+}
+
+.footer-communications p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.footer-intranet {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-intranet a {
+    color: #042467;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer-intranet a:hover {
+    color: #eaab30;
+}
+
+.footer-intranet i {
+    color: #042467;
+    font-size: 0.8rem;
+}
+
+.footer-intranet span {
+    color: #666;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid #555;
-    color: #ccc;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 /* Responsive Design */
@@ -1003,7 +1207,25 @@ section {
     }
     
     .contact-content {
-        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-branding {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
     
     .committee-grid {
@@ -1065,6 +1287,16 @@ section {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+.sponsor-item a {
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.sponsor-item a:hover {
+    opacity: 0.8;
+}
+
     .sponsor-logo {
         max-height: 40px;
         max-width: 100px;
@@ -1083,6 +1315,16 @@ section {
     font-size: 1rem;
 }    .venue-features {
         grid-template-columns: 1fr;
+    }
+    
+    .transport-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .hotel-item .btn {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
     }
     
     .dates-grid {
