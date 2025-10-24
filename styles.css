@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #042467;
     background-color: #fff;
@@ -44,18 +44,10 @@ body {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.nav-logo h2 {
-    color: #042467;
-    font-weight: 700;
-    font-size: 1.8rem;
-    margin: 0;
 }
 
 .emory-logo {
-    height: 35px;
+    height: 80px;
     width: auto;
 }
 
@@ -76,6 +68,12 @@ body {
     color: #042467;
 }
 
+.nav-link.active {
+    color: #042467;
+    font-weight: 600;
+    border-bottom: 2px solid #042467;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -92,9 +90,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #042467 0%, #eaab30 100%);
+    background: linear-gradient(135deg, rgba(0, 47, 108, 0.6) 0%, rgba(0, 47, 108, 0.2) 100%);
     color: white;
-    padding: 120px 0 80px;
+    padding: 250px 0 180px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -244,6 +242,32 @@ section {
     margin-right: auto;
 }
 
+.about-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+}
+
+.about-logo {
+    flex-shrink: 0;
+}
+
+.ssgg-logo {
+    height: 180px;
+    width: auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
 .about-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -315,6 +339,48 @@ section {
 }
 
 .date {
+    font-weight: 600;
+    color: #042467;
+    font-size: 1.1rem;
+}
+
+.registration-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.registration-note p {
+    margin: 0;
+    color: #042467;
+    font-size: 1.1rem;
+}
+
+.dates-simple {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.date-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.date-row:last-child {
+    border-bottom: none;
+}
+
+.date-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.date-value {
     font-weight: 600;
     color: #042467;
     font-size: 1.1rem;
@@ -445,6 +511,61 @@ section {
     text-align: center;
 }
 
+.hotel-link {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.hotel-link .btn {
+    margin-bottom: 0.5rem;
+}
+
+.hotel-booking {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.hotel-booking h3 {
+    color: #042467;
+    margin-bottom: 1rem;
+}
+
+.hotel-booking .hotel-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #042467;
+}
+
+.hotel-booking .hotel-item.featured-hotel {
+    background: #e8f4fd;
+    border-left-color: #eaab30;
+}
+
+.hotel-booking .hotel-item h4 {
+    color: #042467;
+    margin-bottom: 0.5rem;
+}
+
+.hotel-booking .hotel-item p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.hotel-booking .btn {
+    margin-top: 1rem;
+}
+
+.hotel-note {
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+}
+
 .note {
     margin-top: 1rem;
     color: #666;
@@ -511,6 +632,14 @@ section {
 .event {
     flex: 1;
     color: #042467;
+}
+
+.event-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
 }
 
 /* Speakers Section */
@@ -690,8 +819,8 @@ section {
 .transportation-parking,
 .dining-options,
 .local-attractions {
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 2px solid #f0f0f0;
 }
 
@@ -700,7 +829,7 @@ section {
 .local-attractions h3 {
     color: #042467;
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .transportation-parking h4,
@@ -708,7 +837,7 @@ section {
 .local-attractions h4 {
     color: #042467;
     font-size: 1.3rem;
-    margin: 1.5rem 0 1rem 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .transportation-parking h5,
@@ -716,29 +845,29 @@ section {
 .local-attractions h5 {
     color: #042467;
     font-size: 1.1rem;
-    margin: 1rem 0 0.5rem 0;
+    margin: 0.5rem 0 0.25rem 0;
     font-weight: 600;
 }
 
 .transport-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
 .transport-item {
     background: #f8f9fa;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
     border-left: 4px solid #042467;
 }
 
 .parking-info {
     background: #f8f9fa;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     border-left: 4px solid #eaab30;
 }
 
@@ -1252,13 +1381,12 @@ section {
         gap: 0.5rem;
     }
     
-    .nav-logo h2 {
-        font-size: 1.4rem;
-    }
-    
     .venue-image img {
         max-width: 100%;
-    }/* Sponsors Section */
+    }
+}
+
+/* Sponsors Section */
 .sponsors {
     background-color: #fff;
     padding: 60px 0;
@@ -1398,6 +1526,21 @@ html {
 
 .fade-in-up {
     animation: fadeInUp 0.8s ease-out;
+}
+
+    .about-logo-section {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+            .ssgg-logo {
+                height: 200px;
+            }
+    
+    .about-text p {
+        text-align: center;
+    }
 }
 
 /* Scroll animations */
