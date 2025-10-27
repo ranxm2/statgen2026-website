@@ -90,7 +90,6 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(0, 47, 108, 0.6) 0%, rgba(0, 47, 108, 0.2) 100%);
     color: white;
     padding: 250px 0 180px;
     text-align: center;
@@ -104,7 +103,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
     overflow: hidden;
 }
 
@@ -112,7 +110,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(2px);
 }
 
 .hero-content {
@@ -124,21 +121,24 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero h2 {
-    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 1rem;
     opacity: 0.9;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     margin-bottom: 2rem;
     opacity: 0.8;
 }
@@ -572,6 +572,21 @@ section {
     font-style: italic;
 }
 
+.btn.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.tba-text {
+    font-size: 1.2rem;
+    color: #042467;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0;
+}
+
 /* Schedule Section */
 .schedule {
     background-color: #fff;
@@ -704,7 +719,19 @@ section {
     background-color: #fff;
 }
 
+.venue-top-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
 .venue-content {
+    display: block;
+}
+
+.venue-bottom-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -976,6 +1003,20 @@ section {
     font-weight: 600;
 }
 
+.committee-member.chair::before {
+    content: "Chair" !important;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #042467;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 .member-photo {
     width: 120px;
     height: 120px;
@@ -1046,13 +1087,14 @@ section {
 }
 
 .sponsors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
     align-items: center;
-    justify-items: center;
-    max-width: 600px;
+    justify-content: center;
+    max-width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .sponsor-item {
@@ -1062,7 +1104,11 @@ section {
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 200px;
 }
 
 .sponsor-item:hover {
@@ -1071,10 +1117,8 @@ section {
 }
 
 .sponsor-logo {
-    max-height: 50px;
-    max-width: 120px;
+    height: 150px;
     width: auto;
-    height: auto;
     object-fit: contain;
 }
 
