@@ -144,6 +144,8 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        padding-top: 80px;
+        min-height: calc(100vh - 80px);
     }
 }
 
@@ -1059,9 +1061,8 @@ section {
 }
 
 .member-info .university {
-    color: #042467;
+    color: #666;
     font-size: 0.9rem;
-    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -1144,15 +1145,17 @@ section {
 }
 
 /* Simple committee members (without photos) */
-.committee-member:not(.featured) h4 {
-    font-size: 1.2rem;
+.committee-member h4 {
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #042467;
+    font-weight: 600;
 }
 
-.committee-member:not(.featured) p {
+.committee-member p {
     color: #666;
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Contact Section */
@@ -1524,6 +1527,8 @@ section {
     
     .hero {
         padding: 100px 0 60px;
+        padding-top: 100px;
+        min-height: calc(100vh - 100px);
     }
     
     .hero h1 {
