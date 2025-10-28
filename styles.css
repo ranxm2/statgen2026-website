@@ -91,7 +91,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/8Y0A3277.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/8Y0A3277.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,32 +101,6 @@ body {
     text-align: center;
     color: white;
     position: relative;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('images/8Y0A3277.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(0.1px);
-    z-index: 1;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    z-index: 2;
 }
 
 .hero-content {
@@ -173,7 +147,7 @@ body {
 /* Mobile background */
 @media (max-width: 768px) {
     .hero {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/8Y0A3277.webp');
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/8Y0A3277.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
