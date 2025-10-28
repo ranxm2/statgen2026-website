@@ -90,44 +90,20 @@ body {
 
 /* Hero Section */
 .hero {
-    color: white;
-    padding: 300px 0 220px;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/8Y0A3277.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.hero-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 1;
-}
-
-.hero-bg-image {
-    width: 100%;
-    height: 200vh;
-    object-fit: cover;
+    color: white;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
     max-width: 800px;
-    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -154,26 +130,21 @@ body {
     opacity: 0.8;
 }
 
-.hero-date {
-    margin-bottom: 3rem;
-}
-
-.hero-date h3 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.hero-date p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-}
-
 .hero-buttons {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/8Y0A3277.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 /* Button Styles */
@@ -213,6 +184,19 @@ body {
 .btn-large {
     padding: 15px 40px;
     font-size: 1.1rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    color: #fff;
 }
 
 /* Section Styles */
@@ -1371,10 +1355,6 @@ section {
         font-size: 1.5rem;
     }
     
-    .hero-date h3 {
-        font-size: 2rem;
-    }
-    
     .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -1496,7 +1476,9 @@ section {
 .sponsor-item p {
     color: #666;
     font-size: 1rem;
-}    .venue-features {
+}
+
+    .venue-features {
         grid-template-columns: 1fr;
     }
     
@@ -1546,6 +1528,14 @@ section {
     
     .hero h1 {
         font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
     }
     
     .section-header h2 {
