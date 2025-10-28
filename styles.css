@@ -106,6 +106,7 @@ body {
 .hero-content {
     max-width: 800px;
     padding: 40px 30px;
+    background-color: rgba(3, 33, 105, 0.8);
     background: rgba(3, 33, 105, 0.8);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
