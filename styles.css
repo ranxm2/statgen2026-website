@@ -1664,17 +1664,45 @@ html {
     transform: translateX(5px);
 }
 
+.co-chair a {
+    color: #032169;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.co-chair a:hover {
+    color: #032169;
+    text-decoration: none;
+}
+
+/* Style for co-chair names and institutions separately */
+.co-chair .name {
+    color: #032169;
+    font-weight: normal;
+}
+
+.co-chair .institution {
+    color: #666;
+    font-weight: normal;
+}
+
 .co-chair strong {
     color: #032169;
     font-size: 1rem;
     display: block;
     margin-bottom: 5px;
+    font-weight: normal;
 }
 
 .co-chair br + * {
-    color: #666;
-    font-size: 0.9rem;
+    color: #333;
+    font-size: 1rem;
     line-height: 1.4;
+    font-weight: normal;
 }
 
 /* Mobile responsiveness for tracks */
