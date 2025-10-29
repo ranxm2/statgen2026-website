@@ -209,6 +209,73 @@ body {
     color: #fff;
 }
 
+/* Accent Button */
+.btn-accent {
+    background-color: #eaab30; /* Emory gold */
+    color: #042467;
+}
+
+.btn-accent:hover {
+    background-color: #f0b948;
+    color: #042467;
+}
+
+/* Call for Abstracts Section */
+.call-abstracts {
+    background-color: #fff;
+}
+
+.call-abstracts .section-header p {
+    margin-top: 0.5rem;
+}
+
+.call-abstracts-content {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    padding: 24px 28px;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.cta-text h3 {
+    margin: 0 0 8px 0;
+    color: #032169;
+}
+
+.cta-text p {
+    margin: 0;
+    color: #666;
+}
+
+.cta-action {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .cta-card {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .cta-action {
+        width: 100%;
+    }
+    .cta-action .btn {
+        width: 100%;
+    }
+}
+
 /* Section Styles */
 section {
     padding: 80px 0;
@@ -265,6 +332,11 @@ section {
 
 .about-text {
     flex: 1;
+}
+
+.about-cta {
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .about-text p {
