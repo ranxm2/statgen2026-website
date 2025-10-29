@@ -1621,6 +1621,11 @@ html {
     margin-top: 30px;
 }
 
+/* Add spacing before Co-chairs for Program Tracks */
+.committee-section h3:not(:first-child) {
+    margin-top: 3rem;
+}
+
 .track-section {
     background: #f8f9fa;
     border-radius: 10px;
