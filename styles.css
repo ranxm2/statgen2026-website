@@ -339,6 +339,21 @@ section {
     text-align: center;
 }
 
+/* Enlarge the About-section abstract call button */
+.about-cta .btn-accent {
+    padding: 22px 56px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-cta .btn-accent {
+        width: 100%;
+        padding: 20px 24px;
+        font-size: 1.25rem;
+    }
+}
+
 .about-text p {
     font-size: 1.2rem;
     text-align: left;
