@@ -1623,7 +1623,13 @@ html {
 
 /* Add spacing before Co-chairs for Program Tracks */
 .committee-section h3:not(:first-child) {
-    margin-top: 3rem;
+    margin-top: 3rem !important;
+}
+
+/* More specific targeting for the tracks section */
+.committee-content .committee-section h3:last-of-type {
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .track-section {
