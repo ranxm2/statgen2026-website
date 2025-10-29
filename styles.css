@@ -1616,8 +1616,8 @@ html {
 /* Program Tracks Section */
 .tracks-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
     margin-top: 30px;
 }
 
@@ -1638,6 +1638,9 @@ html {
     padding: 25px;
     border: 1px solid #e9ecef;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
 .track-section:hover {
@@ -1650,15 +1653,17 @@ html {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
     border-bottom: 2px solid #032169;
     padding-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .track-co-chairs {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex: 1;
 }
 
 .co-chair {
@@ -1668,6 +1673,7 @@ html {
     border-left: 4px solid #032169;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    flex: 1;
 }
 
 .co-chair:hover {
@@ -1694,11 +1700,33 @@ html {
 .co-chair .name {
     color: #032169;
     font-weight: normal;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .co-chair .institution {
     color: #666;
     font-weight: normal;
+}
+
+.co-chair .title {
+    color: #032169;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.co-chair .department {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.co-chair .university {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0;
 }
 
 .co-chair strong {
