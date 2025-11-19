@@ -1,4 +1,4 @@
-# STATGEN 2026 Conference Website
+# STATGEN 2026 Conference Website [https://statgen26.emory.edu/]
 
 ## Conference on Statistics in Genomics and Genetics
 
