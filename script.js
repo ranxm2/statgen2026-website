@@ -54,22 +54,32 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const scheduleDays = document.querySelectorAll('.schedule-day');
-    
+
+    if (!tabButtons.length || !scheduleDays.length) {
+        return;
+    }
+
     tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons and days
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const dayId = this.getAttribute('data-day');
+            if (!dayId) return;
+
+            // Toggle active state on buttons
             tabButtons.forEach(btn => btn.classList.remove('active'));
-            scheduleDays.forEach(day => day.classList.remove('active'));
-            
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            // Show corresponding day
-            const dayId = button.getAttribute('data-day');
-            const targetDay = document.getElementById(dayId);
-            if (targetDay) {
-                targetDay.classList.add('active');
-            }
+            this.classList.add('active');
+
+            // Show only the selected day
+            scheduleDays.forEach(day => {
+                if (day.id === dayId) {
+                    day.classList.add('active');
+                    day.style.display = 'block';
+                } else {
+                    day.classList.remove('active');
+                    day.style.display = 'none';
+                }
+            });
         });
     });
 });
